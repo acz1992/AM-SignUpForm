@@ -5,12 +5,34 @@
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./src/style.css" />
-		<title>Vite + TS</title>
+		<title>Welcome to the most beautiful form online!</title>
 	</head>
-	<body>
-		<p>this is a stuupid test</p>
-		<div id="app" class="bg-black"></div>
-		<p class="text bg-red-900">text is here</p>
+	<body class="w-screen h-screen flex flex-row grid-cols-2">
+		<div id="illustration"></div>
+			<div class="justify-center items-center">
+				<form id="my_form" class="w-[50vw] min-w-[400px] flex flex-col gap-6 p-10">
+					<h1>Welcome</h1>
+					<p class="comment">Please register, before we show You around.</p>
+					<span class="flex column">
+						<label for="Firstname">First name</label>
+						<input type="text" name="Firstname" placeholder="Your first name goes here">
+					</span>
+					<span>
+						<label for="Lastname"> Surname</label>
+						<input type="text" name="Lastname" placeholder="Your surname goes here">
+					</span>
+					<span>
+						<label for="Email">Email</label>
+						<input type="email" name="Email" placeholder="Your Email goes here">
+					</span>
+					<span>
+						<label for="Passwort">Password</label>
+						<input type="password" name="Password" placeholder="Your password goes here">
+					</span>
+				<button class="btn-primary">Register</button>
+				<p class="comment">or</p>
+				<button class="btn-secondary">Login</button>
+				</form>
 		<script type="module" src="./src/main.ts"></script>
 	</body>
 </html>
