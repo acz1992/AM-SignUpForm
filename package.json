@@ -1,0 +1,22 @@
+{
+	"name": "signupformam",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"devDependencies": {
+		"tailwindcss": "^3.2.4",
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0"
+	},
+	"scripts": {
+		"serve:db": "json-server --host 0.0.0.0 --port 3000 -w db.json",
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"autoprefixer": "^10.4.13",
+		"json-server": "^0.17.1",
+		"postcss": "^8.4.20"
+	}
+}
