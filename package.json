@@ -9,7 +9,7 @@
 		"vite": "^4.0.0"
 	},
 	"scripts": {
-		"serve:db": "json-server --host 0.0.0.0 --port 3000 -w db.json",
+		"serve:db": "json-server --host 0.0.s0.0 --port 3000 -w db.json",
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview"

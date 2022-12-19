@@ -1,5 +1,4 @@
-import axios from "axios";
-
+//import axios from "axios";
 export {};
 
 const form = document.getElementById("form") as HTMLFormElement;
@@ -30,3 +29,13 @@ form.addEventListener("submit", async (event) => {
 
 	alert(`Successfully registered! Your user id is: ${user.data.id}`);
 });
+
+function style_children (parent: HTMLElement, tailwind_class: string) {
+    let temp_children = parent.children as HTMLCollection
+    for(let i = 0; i < Object.keys(temp_children).length; i ++){
+        temp_children[i].classList.add(tailwind_class)
+    }
+}
+
+style_children(form, "flex")
+style_children(form, "flex-col")
