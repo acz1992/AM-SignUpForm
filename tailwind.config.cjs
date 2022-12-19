@@ -3,9 +3,10 @@ module.exports = {
 	content: ["./src/**/*.{html,js,ts}", "./index.html"],
 	theme: {
 		extend: {
-			padding: {
+			padding:
+			{
 				'1-3-1-3': '1vw 3vw 1vw 3vw',
-			  },
+			},
 			colors: {
 			'input-white': 'rgba(240, 248, 240, 1)', //also for the primary btn
 			'background-white': 'rgba(214, 229, 214, 1)',
